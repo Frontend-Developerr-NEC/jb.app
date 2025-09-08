@@ -1,0 +1,70 @@
+.moviesContainer {
+  height: max-content;
+  width: max-content;
+  padding: 20px;
+  border: 2px ridge whitesmoke;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 15px 5px royalblue,
+    -1px -1px 15px 5px royalblue;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+form > li {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 7px;
+  font-size: 20px;
+  color: rgb(226, 226, 228);
+}
+
+form > li > input {
+  height: 40px;
+  padding: 0% 10px;
+  font-size: 18px;
+  border: 1px groove whitesmoke;
+  color:antiquewhite;
+  letter-spacing: 5px;
+}
+
+form > button {
+  height: 40px;
+  letter-spacing: 4px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 72, 0);
+  border: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .moviesContainer {
+    height: max-content;
+    width: max-content;
+    padding: 20px;
+    border: 2px solid whitesmoke;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}

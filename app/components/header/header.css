@@ -1,0 +1,81 @@
+header {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0% 20px;
+  border: 2px solid gray;
+  z-index: 999;
+  background-color: whitesmoke;
+  color: black;
+}
+
+header > nav {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+
+header > nav > button {
+  height: 40px;
+  width: 76px;
+  font-size: 15px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 9px;
+  border: 2px solid rgb(68, 255, 0);
+  letter-spacing: 2px;
+}
+
+#navbarToggle {
+  display: none;
+}
+select{
+  height: 40px;
+  width: max-content;
+  padding: 5px 10px;
+}
+
+select > option{
+    height: 40px;
+  width: max-content;
+  padding: 5px 30px;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  #navbarToggle {
+    display: flex;
+    height: 30px;
+    width: 35px;
+    font-size: 18px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+  }
+  #toggleNavbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    top: 105%;
+    left: 0%;
+    right: 0%;
+    transform: translateX(-110%);
+    transition: 1s;
+    color: rgb(255, 255, 255);
+    z-index: 999999;
+  }
+}
